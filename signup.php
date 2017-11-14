@@ -1,13 +1,15 @@
 <?php
 header("Access-Control-Allow-Origin: *");
-	$servername = "us-cdbr-iron-east-05.cleardb.net";
-	$username = "bb61e79e8bd17e";
-	$password1 = "5a9b8e41";
-	$database = "";
+$server = "us-cdbr-iron-east-05.cleardb.net";
+$username = "b2f5511fbdba7e";
+$password = "42957923";
+$db = "heroku_6646bfcc8b9b88b";
+
+$conn = new mysqli($server, $username, $password, $db);
 extract($_POST);
 
 // Create connection
-$conn = mysqli_connect($servername, $username, $password1, $database);
+
 
 // Check connection
 if (!$conn) {
