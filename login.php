@@ -1,12 +1,10 @@
 <?php
-	$url = parse_url(getenv("mysql://bb61e79e8bd17e:5a9b8e41@us-cdbr-iron-east-05.cleardb.net/heroku_a157ff67e0821c4?reconnect=true"));
-	extract($_POST);
-	$server = $url["host"];
-	$username = $url["user"];
-	$password = $url["pass"];
-	$db = substr($url["path"], 1);
+$server = "us-cdbr-iron-east-05.cleardb.net";
+$username = "b2f5511fbdba7e";
+$password = "42957923";
+$db = "heroku_6646bfcc8b9b88b";
 
-	$conn = new mysqli($server, $username, $password, $db);
+$conn = new mysqli($server, $username, $password, $db);
 	
 	
 	// Create connection
