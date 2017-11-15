@@ -1,4 +1,5 @@
 <?php
+header("Access-Control-Allow-Origin: *");
 $server = "us-cdbr-iron-east-05.cleardb.net";
 $username = "b2f5511fbdba7e";
 $password = "42957923";
